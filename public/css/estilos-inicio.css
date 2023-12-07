@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(244, 244, 244);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.formulario {
+    border: 1px #29f33a dashed;
+    background: rgb(40, 42, 43);
+    background: linear-gradient(0deg, rgba(65, 247, 111, 0.951) 0%, rgba(235, 242, 244, 1) 100%);
+    margin-top: 120px;
+    padding: 9px;
+}
+
+h1 {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    text-align: center;
+    color: #1a2537;
+    font-size: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: "Abel", sans-serif;
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #131313;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #070707;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #55b977;
+}
+
+p {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #111111;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: #49dcb1;
+}
+
+@media(min-width:768px) {
+    .formulario {
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}

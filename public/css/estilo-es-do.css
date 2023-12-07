@@ -1,0 +1,138 @@
+.contenido{
+    background-color: #fffffc;
+}
+.table{
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    width: 90%;
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    
+    
+}
+.titulo-tabla{
+    font-size: large;
+    text-align: center;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+
+
+
+}
+.texto-tabla{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform:uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+
+}
+.Encabezado-tabla{
+    background-color: #e8e7e7;
+    height: 45px;
+
+}
+td{
+    border: rgb(198, 198, 198) 0.5px solid;
+
+}
+.button1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    padding: 5px;
+    background-color: #69f279;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #454647;
+
+}
+    .button2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px;
+        padding: 5px;
+        background-color: #f56161;
+        border-radius: 5px;
+        box-shadow: 0px 3px 0px #454647;
+        margin-bottom: 15px;
+    
+    }
+    .button3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        position: relative;
+        margin-left: 45%;
+        width: 120px;
+        padding: 8px;
+        background-color: #4fbbe6 ;
+        border-radius: 5px;
+        box-shadow: 0px 3px 0px #454647;
+        margin-bottom: 15px;
+    
+    }
+
+    .button4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        position: relative;
+        margin-left: 5%;
+        width: 120px;
+        padding: 10px;
+        background-color: #9fa1a1 ;
+        border-radius: 10px;
+        box-shadow: 0px 3px 0px #646464;
+        margin-bottom: 15px;
+    
+    }
+
+
+.field {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  display:flex;
+  flex-direction:row;
+ 
+}
+.titulo{
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5.8%;
+    background-color: rgb(224, 224, 224);
+    padding: 15px;
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(99, 99, 99);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(147, 147, 147);
+  color:white;
+  border:none;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70de7d2f63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/estilos-mi-perfil.css">
+    <title>Mi perfil</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav">
+            <a href="4Home.html" class="logo"><img class="logou" src="LOGO ULEAM 2.png" alt=""></a>
+            <ul class="nav-menu">
+
+
+                <li class="nav-menu-item">
+                    <a href="5Mi_perfil.html" class="nav-menu-link nav-link nav-menu-link_active"> <i
+                            class="fa-solid fa-user"></i> Mi perfil</a></i>
+                </li>
+
+                <li class="nav-menu-item">
+    
+                    <a href="2Cambiar_contrasena.html" class="nav-menu-link nav-link nav-menu-link_active"> <i
+                            class="fa-solid fa-key"></i> Cambiar contraseña</a>
+                </li>
+   
+                <li class="nav-menu-item">
+                    <!-- Enlace para cerrar sesión y redirigir a la página de inicio de sesión -->
+                    <a href="index.html" class="nav-menu-link nav-link">Cerrar sesión</a>
+                </li>   
+    
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="contenido">
+        <div class="contenido-1">
+            <diV class="conte_titulo">
+                <h1 class="titulo">Datos Estudiantiles</h1>
+                <p class="titulo-p">Gestione su información personal</p>
+            </div>
+            <form class="formulario" method="get" onsubmit="return validar_registroti()" id="needs-validation">
+                <div class="contenedor">
+                    <div class="sub_contenedor">
+                        <div class="sub-sub-contenedor-foto">
+                            <img class="imagenPrevisualizacion" id="imagenPrevisualizacion">
+                            <div class="input-foto">
+
+                                <p class="imagen"> <i class="fa-solid fa-arrow-up-from-bracket"></i> Subir</p>
+                                <input type="file" class="file" id="seleccionArchivos" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="sub-sub-sub-contenedor">
+                            <div class="sub-sub-contenedor">
+                                <div class="input-info">
+                                    <label class="info-label">Nombres:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Facultad:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                            </div>
+                            <div class="sub-sub-contenedor">
+                                <div class="input-info">
+                                    <label class="info-label">Apellidos:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Carrera:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                            </div>
+                            <div class="sub-sub-contenedor">
+                                <div class="input-info">
+                                    <label class="info-label">Cédula / Pasaporte:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">itinerario:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sub-contenedor-2">
+                        <diV class="conte_titulo">
+                        <h1 class="titulo">Datos de personales</h1>
+                    </div>
+                        
+                        <div class="sub-sub-sub-contenedor-2">
+                            <div class="sub-sub-contenedor">
+                                <div class="input-info">
+                                    <label class="info-label">Estado civil:</label>
+                                    <select id="seccion" name="seccion" class="seccion">
+                                        <option value="" selected="selected"></option>
+                                        <option value="1">Soltero(a)</option>
+                                        <option value="2">Casado(a)</option>
+                                        <option value="3">Divorciado(a)</option>
+                                        <option value="4">Viudo(a)</option>
+                                        <option value="5">Separado(a)</option>
+                                        <option value="6">Union libre</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Genero:</label>
+                                    <select id="seccion" name="seccion" class="seccion">
+                                        <option value="" selected="selected"></option>
+                                        <option value="1">Femenino</option>
+                                        <option value="2">Masculino</option>
+                                        <option value="3">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sub-sub-contenedor">
+                                <div class="input-info">
+                                    <label class="info-label" for="fecha">Fecha de nacimineto:</label>
+                                    <input class="fecha" type="date" id="fecha" name="fecha"><br><br>
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Lugar de nacimiento</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                                
+                               
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="sub-contenedor-2">
+                        <diV class="conte_titulo">
+                            <h1 class="titulo">Datos de contacto</h1>
+                        </div>
+                        <div class="sub-sub-contenedor-2">
+                            <div class="input-info">
+                                <label class="info-label">Correo electronico personal</label>
+                                <input type="text" class="form-control" id="Información">
+                            </div>
+                            <div class="input-info">
+                                <label class="info-label">Teléfono (Casa): (Este dato no es obligatorio):</label>
+                                <input type="text" class="form-control" id="Información">
+                            </div>
+                            <div class="input-info">
+                                <label class="info-label">Celular:</label>
+                                <input type="text" class="form-control" id="Información">
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="sub-contenedor-2">
+                            <diV class="conte_titulo">
+                                <h1 class="titulo">Dirección</h1>
+                            </div>
+                            <div class="sub-sub-contenedor-2">
+                                <div class="input-info">
+                                    <label class="info-label">Provincia de residencia:</label>
+                                    <select id="provincia_resid" name="provincia_residencia" required="" class="seccion">
+                                        <option value="272">   </option>
+                                        <option value="272">Azuay</option>
+                                        <option value="273">Bolívar</option>
+                                        <option value="274">Cañar</option>
+                                        <option value="275">Carchi</option>
+                                        <option value="276">Chimborazo</option>
+                                        <option value="277">Cotopaxi</option>
+                                        <option value="278">El Oro</option>
+                                        <option value="279">Esmeraldas</option>
+                                        <option value="281">Guayas</option>
+                                        <option value="280">Galápagos</option>
+                                        <option value="282">Imbabura</option>
+                                        <option value="283">Loja</option>
+                                        <option value="284">Los Ríos</option>
+                                        <option value="285">Manabí</option>
+                                        <option value="286">Morona Santiago</option>
+                                        <option value="287">Napo</option>
+                                        <option value="288">Orellana</option>
+                                        <option value="289">Pastaza</option>
+                                        <option value="290">Pichincha</option>
+                                        <option value="291">Santa Elena</option>
+                                        <option value="292">Santo Domingo de los Tsáchilas</option>
+                                        <option value="293">Sucumbíos</option>
+                                        <option value="294">Tungurahua</option>
+                                        <option value="295">Zamora Chinchipe</option>
+                                        <option value="297">Extranjero</option>
+                                        <option value="296">No Registra</option>
+                                    </select>
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Cantón:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Dirección:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                                <div class="input-info">
+                                    <label class="info-label">Parroquia:</label>
+                                    <input type="text" class="form-control" id="Información">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input type="submit" id="button" value="Guardar" class="button">
+                       
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <strong>MANTA - MANABÍ - ECUADOR</strong> Copyright 2023
+    </footer>
+    <script src="Fuction.js"></script>
+
+</body>
+
+</html>

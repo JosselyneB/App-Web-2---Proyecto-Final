@@ -1,0 +1,58 @@
+import db from './firebase/config';
+
+</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/70de7d2f63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos-inicio.css">
+    <link rel="stylesheet" href="css/style-home.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style-registro.css">
+    
+	
+	<style>
+        body {
+            background-image: url('uleam.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white; /* Color del texto sobre la imagen */
+        }
+
+    </style>
+	
+</head>
+
+<body>
+    <form class="formulario" method="post" onsubmit="return validar()">
+        <h1>Iniciar Sesión</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="username" placeholder="Correo">
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fas fa-key lock icon"></i>
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+            
+       
+            <p><a class="link" href="4Home.html" >Iniciar Sesión</a></p>
+            <p><a class="link" href="11Recuperar_contrasena.html">¿Olvidaste tu Contraseña?</a></p>
+            <p>¿No tienes una cuenta? <a class="link" href="3Registro.html">Regístrate</a></p>
+        </div>
+    </form>
+
+    <script src="Fuction.js"></script>
+</body>
+
+</html>

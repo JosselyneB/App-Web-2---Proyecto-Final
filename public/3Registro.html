@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regristro</title>
+    <script src="https://kit.fontawesome.com/70de7d2f63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style-registro.css">
+
+    <style>
+        body {
+            background-image: url('uleam.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: rgb(255, 255, 255)51, 0, 0; /* Color del texto sobre la imagen */
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <form class="formulario"  method="get" onsubmit="return validaregis()">
+
+        <h1>Registrate</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" id="nombre" placeholder="Nombres">
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" id="apellido" placeholder="Apellidos">
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="email" id="email" placeholder="Correo">
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fa-solid fa-key icon"></i>
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+
+            <input type="submit" value="Registrate" class="button">
+            <p> Al registrarte, acepta nuestras Condiciones de uso y Politica de privacidad </p>
+            <p>¿Ya tienes una cuenta? <a class="link" href="index.html">Iniciar Sesión</a></p>
+    
+            
+        </div>
+    </form>
+    <script src="Fuction.js"></script>
+</body>
+</html>

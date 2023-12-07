@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro de Proyecto</title>
+	<script src="https://kit.fontawesome.com/70de7d2f63.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href=" css/estilo1.css">
+	<link rel="stylesheet" href="css/style-home.css">
+</head>
+
+<body>
+	<header class="header">
+		<button class="nav-toggle">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+		<nav class="nav">
+            <a href="4Home.html" class="logo"><img class="logou" src="LOGO ULEAM 2.png" alt=""></a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+    
+                    <a href="5Mi_perfil.html" class="nav-menu-link nav-link nav-menu-link_active"> <i
+                            class="fa-solid fa-user"></i> Mi perfil</a></i>
+    
+                </li>
+                <li class="nav-menu-item">
+    
+                    <a href="2Cambiar_contrasena.html" class="nav-menu-link nav-link nav-menu-link_active"> <i
+                            class="fa-solid fa-key"></i> Cambiar contraseña</a>
+                </li>
+      
+                </li>
+
+				<li class="nav-menu-item">
+                    <!-- Enlace para cerrar sesión y redirigir a la página de inicio de sesión -->
+                    <a href="index.html" class="nav-menu-link nav-link">Cerrar sesión</a>
+                </li>   
+
+            </ul>
+        </nav>
+	</header>
+	<div class="contenido">
+		<diV class="conte_titulo">
+			<h1 class="titulo">REGISTRO DE PROYECTO DE INVESTIGACIÓN</h1>
+		</div>
+		<form class="formulario" method="get" onsubmit="return validar_registroti()" id="needs-validation">
+			<h3 class="contenido_3">INFORMACIÓN GENERAL</h3>
+			<div class="contenedor">
+				<div class="sub_contenedor">
+					<div class="input-info">
+						<label class="info-label">TEMA:</label>
+						<input type="text" class="form-control" id="TEMA" placeholder="CAMPO OBLIGATORIO">
+					</div> 
+					<div class="input-info">
+						<label class="info-label">DESCRIPCIÓN:</label>
+						<input type="text" class="form-control" id="DESCRIPCIÓN" placeholder="CAMPO OBLIGATORIO">
+					</div> 
+					<div class="input-info">
+						<label class="info-label">OBJETIVO GENERAL:</label>
+						<input type="text" class="form-control" id="OBJETIVOG" placeholder="CAMPO OBLIGATORIO">
+					</div> 
+					<div class="input-info">
+						<label class="info-label">OBJETIVOS ESPECÍFICOS:</label>
+						<input type="text" class="form-control" id="OBJETIVOE" placeholder="CAMPO OPCIONAL">
+					</div>
+				</div>
+
+				<div class="sub_contenedor">
+
+					<div class="input-info">
+						<label class="info-label">PALABRAS CLAVE:</label>
+						<input type="text" class="palabras_clave" id="palabra-clave" placeholder="CAMPO OPCIONAL">
+					</div>
+					<div class="input-info">
+						<label class="info-label">CARRERA:</label>
+						<select id="seccion" name="seccion" class="seccion">
+							<option value="" selected="selected"></option>
+							<option value="1">MEDICINA</option>
+							<option value="2">ODONTOLOGÍA</option>
+							<option value="3">ENFERMERIA</option>
+							<option value="5">FISIOTERAPIA</option>
+							<option value="6">FONOAUDIOLOGÍA</option>
+							<option value="7">LABORATORIO CLINICO</option>
+							<option value="8">TERAPIA OCUPACIONAL</option>
+							<option value="9">PSICOLOGIA</option>
+							<option value="10">ADMINISTRACIÓN DE EMPRESAS</option>
+							<option value="12">MERCADOTECNIA</option>
+							<option value="13">CONTABILIDAD Y AUDITORÍA</option>
+							<option value="14">FINANZAS</option>
+							<option value="15">COMERCIO EXTERIOR</option>
+							<option value="16">GESTION DE LA INFORMACIÓN GERENCIAL</option>
+							<option value="17">GESTION DEL TALENTO HUMANO</option>
+							<option value="18">EDUCACIÓN INICIAL</option>
+							<option value="19">EDUCACIÓN ESPECIAL</option>
+							<option value="20">PEDAGOGÍA DE LA ACTIVIDAD FÍSICA Y EL DEPORTE</option>
+							<option value="21">PEDAGOGÍA DE LA LENGUA Y LITERATURA</option>
+							<option value="22">PEDAGOGÍA DE LOS IDIOMAS NACIONALES Y EXTRANJEROS</option>
+							<option value="23">TURISMO</option>
+							<option value="24">HOSPITALIDAD Y HOTELERIA</option>
+							<option value="25">ARTES PLÁSTICAS</option>
+							<option value="26">SOCIOLOGÍA</option>
+							<option value="27">INGENIERÍA CIVIL</option>
+							<option value="28">INGENIERÍA MARÍTIMA</option>
+							<option value="29">ELECTRICIDAD</option>
+							<option value="30">ARQUITECTURA</option>
+							<option value="31">INGENIERÍA INDUSTRIAL</option>
+							<option value="32">INGENIERÍA DE ALIMENTOS</option>
+							<option value="33">INGENIERÍA AGROPECUARIA</option>
+							<option value="34">AGRONEGOCIOS</option>
+							<option value="35">INGENIERÍA AMBIENTAL</option>
+							<option value="36">INGENIERÍA EN TECNOLOGÍAS DE LA INFORMACIÓN</option>
+							<option value="37">INGENIERÍA EN SOFTWARE</option>
+							<option value="38">INGENIERÍA EN SISTEMAS</option>
+							<option value="39">BIOLOGÍA</option>
+							<option value="40">DERECHO</option>
+							<option value="41">ECONOMÍA</option>
+							<option value="42">TRABAJO SOCIAL</option>
+							<option value="43">COMUNICACIÓN</option>
+						</select>
+					</div>
+					<div class="input-info">
+						<label class="info-label">ARCHIVO:</label>
+						<input type="file" class="file" name="documentosubido" accept="application/pdf" placeholder="Imagen" required>
+					</div>
+					<div class="input-info">
+						<label class="info-label" for="fecha">Fecha:</label>
+						<input class="fecha" type="date" id="fecha" name="fecha"><br><br>
+					</div>
+				</div>
+			</div>
+				<input type="submit" id="button" value="Registrar" class="button">
+		</form>
+
+		<footer class="footer">
+			<strong>MANTA - MANABÍ - ECUADOR</strong> Copyright 2023
+		</footer>
+		<script src="Funciones/Fuction.js"></script>
+</body>
+
+</html>

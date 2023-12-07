@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña</title>
+    <script src="https://kit.fontawesome.com/70de7d2f63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        body {
+            background-image: url('uleam.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white; /* Color del texto sobre la imagen */
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <form class="formulario" method="get" onsubmit="return validar_correo()">
+        <div class="contenedor">
+            <div>
+                <h3>Rescuperar contraseña</h3>
+
+                <p class="instructions">Ingrese su dirección de correo electrónico para restablecer la contraseña:</p>
+                    
+                    <input autocapitalize="off" autocorrect="off" id="email" name="email"
+                        placeholder="Dirección de correo electrónico" required="required" size="30" type="email"
+                        value="" />
+
+                    <input class="disable_double_click" id="reset_password_submit" name="commit" type="submit"
+                        value="Enviar" />
+                    <p>¿Ya tienes una cuenta? <a class="link" href="index.html">Iniciar Sesión</a></p>
+          
+                <script src="Funciones/Fuction.js"></script>
+            </div>
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>

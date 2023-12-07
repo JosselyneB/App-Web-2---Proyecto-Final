@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenido {
+    background: #fffffc;
+    width: 100%;
+}
+
+.conte_titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5.8%;
+    background-color: rgb(253, 253, 253);
+    padding: 15px;
+}
+
+
+.formulario {
+    background: #6acf51;
+    margin: auto;
+    width: 90%;
+    border-radius: 1%;
+    margin-top: 5px;
+    height: 470px;
+    margin-bottom: 30px;
+}
+
+.contenido_3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor .sub_contenedor {
+    width: 45%;
+}
+
+.info-label {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.input-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.palabras_clave {
+    width: 65%;
+    padding: 15PX;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
+.form-control {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    width: 65%;
+    height: 60px;
+}
+
+
+.input-info .file {
+
+    color: #000000;
+    padding: 15px;
+    width: 67%;
+    opacity: 100%;
+}
+
+.seccion {
+    width: 65%;
+    height: 20px;
+}
+
+.fecha {
+    width: 65%;
+    text-align: center;
+    margin-left: 26%;
+
+}
+
+
+.input-contenedor {
+    margin-bottom: 30px;
+    border: 1px solid rgb(117, 53, 53);
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: rgb(62, 38, 38);
+}
+
+.button {
+    border: none;
+    width: 20%;
+    color: white;
+    font-size: 15px;
+    background: #575757;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+
+.button:hover {
+    background: #54a55a;
+}
+
+
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: #86d18c;
+}
